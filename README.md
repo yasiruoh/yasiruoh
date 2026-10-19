@@ -1,100 +1,54 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,100:0077B5&height=220&section=header&text=Muhammad%20Yasir%20Mehmood&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Cybersecurity%20Researcher%20%7C%20AI%20Security%20%7C%20Penetration%20Tester&descSize=18&descAlignY=60" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Muhammad%20Yasir%20Mehmood&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Graduate%20Research%20Candidate%20%7C%20AI%20and%20Cybersecurity&descSize=18&descAlignY=60" width="100%" />
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=22&duration=3500&pause=1000&color=00FF88&center=true&vCenter=true&width=900&lines=Cybersecurity+Researcher;AI+Security+Engineer;Penetration+Tester;Bug+Bounty+Hunter;Building+Secure+AI+Systems" />
+**BS Computer Science, University of Haripur** | CGPA 3.64 / 4.00 | Graduating June 2027
 
-<br/>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/muhammadyasirmehmood)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:f23-0038@student.uoh.edu.pk)
-[![Bugcrowd](https://img.shields.io/badge/Bugcrowd-F26822?style=for-the-badge&logo=bugcrowd&logoColor=white)](https://bugcrowd.com)
-![Profile Views](https://komarev.com/ghpvc/?username=yasiruoh&style=for-the-badge&color=00FF88&labelColor=0d1117)
-
-<br/>
-
-![University](https://img.shields.io/badge/University%20of%20Haripur-BS%20Computer%20Science-0d1117?style=flat-square&labelColor=00FF88&color=0d1117)
-![CGPA](https://img.shields.io/badge/CGPA-3.64%20%2F%204.00-0d1117?style=flat-square&labelColor=00FF88&color=0d1117)
-![Graduation](https://img.shields.io/badge/Graduating-June%202027-0d1117?style=flat-square&labelColor=00FF88&color=0d1117)
+[![Email](https://img.shields.io/badge/Email-yasirmehmoodhrp2005%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yasirmehmoodhrp2005@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Yasir%20Mehmood-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/muhammadyasirmehmood)
 
 </div>
 
 <br/>
 
-## About Me
+## About
 
-I'm a **Computer Science undergraduate at the University of Haripur**, specializing in **cybersecurity and penetration testing**.
-
-My work sits at the intersection of **AI and security**: researching modern cyber threats, finding vulnerabilities, and building AI-powered tools that help secure software.
+I am a final-year Computer Science student specializing in cybersecurity and penetration testing. My research focuses on how artificial intelligence can be used to find, explain, and fix security weaknesses, and how AI systems themselves can be secured. I am seeking graduate research opportunities in AI and cybersecurity.
 
 <br/>
 
-## Experience
+## Research Interests
 
-<table>
-<tr>
-<td width="25%"><b>Jun 2026 - Sep 2026</b><br/><sub>Remote, Completed</sub></td>
-<td>
-<b>AI and Cyber Security Intern</b> at <b>Deltaroot LLC</b>
-<ul>
-<li>Cloud governance, risk and compliance work using <b>Microsoft Purview</b></li>
-<li>Configured and documented <b>Communication Compliance</b>, <b>Insider Risk Management</b>, and <b>Audit Search / Retention Policies</b></li>
-<li>Produced structured lab reports for each stage of the internship</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><b>Leadership</b><br/><sub>IPCIH</sub></td>
-<td>
-<b>Head of Technical Wing</b> at <b>IPCIH Youth & Peace Society</b>
-<ul>
-<li>Led technical initiatives and built a complete <b>LMS</b>, live at <a href="https://lms.ipcih.gov.pk/login">lms.ipcih.gov.pk</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><b>Leadership</b><br/><sub>University of Haripur</sub></td>
-<td><b>Tech Team Lead</b> at the <b>Cyber Security Club</b></td>
-</tr>
-<tr>
-<td><b>Independent</b><br/><sub>Bugcrowd</sub></td>
-<td>
-<b>Bug Bounty Researcher</b>
-<ul>
-<li>Disclosed a vulnerability on a <b>USGS</b> government domain through Bugcrowd</li>
-</ul>
-</td>
-</tr>
-</table>
+- **AI-driven penetration testing:** comparing automated and manual offensive security methodologies
+- **Large language model security:** prompt injection and adversarial attacks on AI systems
+- **Secure software engineering with AI:** automated vulnerability detection and secure code analysis
+- **Generative AI in software engineering:** practices, risks, and evidence from the literature
 
 <br/>
 
-## Research and Publications
+## Publications
 
 | Paper | Venue | Status |
 |:------|:------|:------:|
-| **A Comparative Study of Traditional and AI-Driven Penetration Testing and a Layered Hybrid Model** | IEEE AMICT 2026, Labuan, Malaysia | ![Submitted](https://img.shields.io/badge/-Submitted-F9A825?style=flat-square) |
-| **Systematic Literature Review: Generative AI Integration in Software Engineering Practices** | MySEC 2026 | ![In Preparation](https://img.shields.io/badge/-In%20Preparation-0077B5?style=flat-square) |
+| **A Comparative Study of Traditional and AI-Driven Penetration Testing and a Layered Hybrid Model** | IEEE AMICT 2026, Labuan, Malaysia | ![Accepted](https://img.shields.io/badge/-Accepted%20for%20Oral%20Presentation-2E7D32?style=flat-square) |
+| **Systematic Literature Review: Generative AI Integration in Software Engineering Practices** | International Journal of Computation, Malaysia | ![Under Review](https://img.shields.io/badge/-Under%20Review-0077B5?style=flat-square) |
 
 <br/>
 
 ## Final Year Project
 
-### SecureCode AI
+### SecureCode AI: An Intelligent Source Code Security Analysis Platform
 
-**An Intelligent Source Code Security Analysis Platform**
+An AI-assisted platform that analyzes source code for vulnerabilities, explains each finding, and suggests secure fixes.
 
-An AI-assisted platform that analyzes source code for vulnerabilities and explains how to fix them.
-
-| Feature | Description |
-|:--------|:------------|
+| Component | Description |
+|:----------|:------------|
 | **Static Analysis** | Detects vulnerabilities in source code |
-| **AI Explanations** | Explains each finding and suggests secure fixes |
+| **AI Explanations** | Explains each finding and proposes secure fixes |
 | **Security Scoring** | Rates the overall security of a codebase |
-| **PDF Reports** | Generates shareable security reports |
-| **GitHub Integration** | Connects to repositories with a dashboard view |
+| **Reporting** | Generates PDF security reports and a dashboard with GitHub integration |
 
-Built with free and open-source tools and a custom AI component.
+Built entirely on free and open-source tools with a custom AI component.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -107,7 +61,8 @@ Built with free and open-source tools and a custom AI component.
 
 ## Education
 
-**BS Computer Science, University of Haripur** *(expected June 2027)*
+**Bachelor of Science in Computer Science**, University of Haripur
+Expected June 2027 | CGPA 3.64 / 4.00
 
 <details>
 <summary><b>Relevant coursework</b></summary>
@@ -119,61 +74,77 @@ Artificial Intelligence, Machine Learning, Deep Learning, Cybersecurity, Informa
 
 <br/>
 
-## Tech Stack
+## Experience
+
+<table>
+<tr>
+<td width="25%"><b>Jun 2026 - Sep 2026</b><br/><sub>Remote, Completed</sub></td>
+<td>
+<b>AI and Cyber Security Intern</b>, Deltaroot LLC
+<ul>
+<li>Cloud governance, risk and compliance work using <b>Microsoft Purview</b></li>
+<li>Configured and documented Communication Compliance, Insider Risk Management, and Audit Search / Retention Policies</li>
+<li>Produced structured lab reports for each stage of the internship</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><b>Independent</b><br/><sub>Bugcrowd</sub></td>
+<td>
+<b>Bug Bounty Researcher</b>
+<ul>
+<li>Responsibly disclosed a vulnerability on a <b>USGS</b> government domain</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><b>Leadership</b><br/><sub>IPCIH</sub></td>
+<td>
+<b>Head of Technical Wing</b>, IPCIH Youth & Peace Society
+<ul>
+<li>Led technical initiatives and built a complete learning management system (LMS)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><b>Leadership</b><br/><sub>University of Haripur</sub></td>
+<td><b>Tech Team Lead</b>, Cyber Security Club</td>
+</tr>
+</table>
+
+<br/>
+
+## Technical Skills
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=py,cpp,js,php,html,css,react,fastapi,laravel,nodejs,bootstrap,mysql,docker,git,linux,tensorflow,pytorch,sklearn,opencv&perline=10" />
+<img src="https://skillicons.dev/icons?i=py,cpp,js,php,html,css,react,fastapi,laravel,nodejs,mysql,docker,git,linux,tensorflow,pytorch,sklearn,opencv&perline=9" />
 
 </div>
 
 | Category | Tools |
 |:---------|:------|
+| **Languages** | Python, C++, JavaScript, PHP, SQL, HTML, CSS |
 | **Security** | Burp Suite, OWASP ZAP, Nmap, Wireshark, Metasploit, Semgrep, Bandit, Microsoft Purview |
 | **AI / ML** | TensorFlow, PyTorch, Scikit-learn, OpenCV, Transformers, LangChain, LLMs |
-| **Development** | React, FastAPI, Laravel, Node.js, Bootstrap, Git, Docker, MySQL |
-| **Languages** | Python, C++, JavaScript, PHP, SQL, HTML, CSS |
-
-<br/>
-
-## Interests
-
-`Penetration Testing` `Red Teaming` `Web Security` `AI / LLM Security` `Prompt Injection` `Cloud GRC` `Secure Coding` `Application Security` `Threat Intelligence` `Bug Bounty` `Malware Analysis` `DevSecOps`
+| **Development** | React, FastAPI, Laravel, Node.js, Git, Docker, MySQL |
 
 <br/>
 
 ## Goals
 
-- [ ] Publish research papers (AMICT 2026, MySEC 2026)
-- [ ] Complete SecureCode AI
-- [ ] Publish open-source security projects
-- [ ] Compete in international CTFs
-- [ ] Pursue a funded MS with a research focus in cybersecurity
+- Pursue a funded graduate degree with a research focus on AI and cybersecurity
+- Present at IEEE AMICT 2026 and publish the systematic literature review
+- Complete SecureCode AI and release it as open source
 
 <br/>
 
-## GitHub Stats
-
-<p align="center">
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=yasiruoh&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00FF88&icon_color=00FF88"/>
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yasiruoh&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00FF88"/>
-</p>
-
-<p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com?user=yasiruoh&theme=github-dark&hide_border=true&background=0d1117&ring=00FF88&fire=00FF88&currStreakLabel=00FF88"/>
-</p>
-
-<br/>
-
-## Let's Connect
+## Contact
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/muhammadyasirmehmood)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:f23-0038@student.uoh.edu.pk)
+**Email:** [yasirmehmoodhrp2005@gmail.com](mailto:yasirmehmoodhrp2005@gmail.com) | **LinkedIn:** [muhammadyasirmehmood](https://linkedin.com/in/muhammadyasirmehmood)
 
-> **"The future of cybersecurity is not AI replacing security professionals, it's security professionals empowered by AI."**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,100:0077B5&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=110&section=footer" width="100%" />
 
 </div>
