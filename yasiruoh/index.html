@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Yasir Mehmood – Academic Homepage</title>
+<meta name="description" content="Muhammad Yasir Mehmood, final-year Computer Science student at the University of Haripur. Research in AI security, LLM safety, adversarial machine learning and penetration testing.">
+<meta property="og:title" content="Muhammad Yasir Mehmood – Academic Homepage">
+<meta property="og:description" content="Final-year CS student researching AI security, machine learning and penetration testing.">
+<meta property="og:image" content="img/yasir.jpg">
+<meta name="theme-color" content="#2B3FE0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%232B3FE0%22/><text x=%2250%22 y=%2272%22 font-size=%2262%22 font-family=%22sans-serif%22 font-weight=%22800%22 text-anchor=%22middle%22 fill=%22white%22>Y</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F5F7; --panel:#FFFFFF; --ink:#101B2A; --muted:#4D5B6B; --line:#CBD3DC;
+  --blue:#2B3FE0; --blue-ink:#FFFFFF; --amber:#FFD45C; --amber-ink:#101B2A; --ok:#1C7A4B; --warn:#B3261E;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1621; --panel:#15202D; --ink:#E8EDF3; --muted:#9AA8B8; --line:#2A3847;
+    --blue:#8C9BFF; --blue-ink:#0E1621; --amber:#8A6A00; --amber-ink:#FFF3CC; --ok:#5BD08D; --warn:#FF8A80;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1621; --panel:#15202D; --ink:#E8EDF3; --muted:#9AA8B8; --line:#2A3847;
+  --blue:#8C9BFF; --blue-ink:#0E1621; --amber:#8A6A00; --amber-ink:#FFF3CC; --ok:#5BD08D; --warn:#FF8A80;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65}
+a{color:var(--blue);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,textarea:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;background:var(--panel);padding:6px 10px;z-index:20}
+
+/* nav (floats over the hero, turns solid after it) */
+.bar{position:fixed;top:0;left:0;right:0;z-index:10;border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
+.bar.solid{background:var(--paper);border-color:var(--line)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;gap:16px}
+.brand{font-family:var(--display);font-weight:800;text-decoration:none;color:var(--ink);letter-spacing:-.01em;white-space:nowrap}
+nav{display:flex;gap:18px;align-items:center;font-family:var(--display);font-weight:500;font-size:.93rem;flex-wrap:wrap;justify-content:flex-end}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+#theme{font:inherit;background:none;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:3px 10px;cursor:pointer}
+.bar:not(.solid) .brand,.bar:not(.solid) nav a,.bar:not(.solid) #theme{color:#fff}
+.bar:not(.solid) #theme{border-color:rgba(255,255,255,.45)}
+
+/* parallax hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;display:flex;align-items:center;color:#fff;background:linear-gradient(160deg,#080F2B 0%,#12236B 55%,#2B3FE0 135%)}
+.layer{position:absolute;left:0;right:0;top:-25%;bottom:-25%;pointer-events:none;will-change:transform}
+.l-orbs{background:radial-gradient(38% 46% at 78% 36%,rgba(140,155,255,.5),transparent 70%),radial-gradient(34% 44% at 12% 78%,rgba(255,212,92,.2),transparent 70%)}
+.l-grid{background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(70% 60% at 50% 50%,#000,transparent);mask-image:radial-gradient(70% 60% at 50% 50%,#000,transparent)}
+.l-nodes{width:100%;height:150%;bottom:auto}
+.l-glyphs{top:0;bottom:0}
+.g{position:absolute;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:700;white-space:nowrap;color:#fff}
+.g i{display:block;font-style:normal;animation:drift 9s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateY(-8px)}to{transform:translateY(8px)}}
+.hero-in{position:relative;display:grid;grid-template-columns:1fr 250px;gap:56px;align-items:center;width:100%;padding-top:100px;padding-bottom:130px}
+.role{font-family:var(--display);font-weight:500;color:#B8C2FF;margin:0 0 10px}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,7vw,5rem);line-height:.98;letter-spacing:-.035em;margin:0 0 20px;color:#fff}
+.hero .lead{font-size:1.2rem;color:#D5DBF5;max-width:33em;margin:0 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font-family:var(--display);font-weight:700;text-decoration:none;padding:10px 18px;border-radius:8px;border:2px solid rgba(255,255,255,.85);color:#fff;display:inline-block}
+.btn.primary{background:#fff;color:#12236B;border-color:#fff}
+.btn:focus-visible{outline-color:#FFD45C}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0;padding:0;list-style:none}
+.facts li{font-family:var(--display);font-size:.88rem;padding:4px 12px;border-radius:99px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22)}
+.portrait{position:relative;justify-self:center}
+.portrait::before{content:"";position:absolute;inset:-14px;border-radius:26px;border:2px solid rgba(255,255,255,.3);transform:rotate(4deg)}
+.portrait img{position:relative;display:block;width:240px;height:253px;object-fit:cover;border-radius:20px;border:3px solid rgba(255,255,255,.92);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.cue{position:absolute;left:50%;bottom:84px;width:26px;height:42px;margin-left:-13px;border:2px solid rgba(255,255,255,.6);border-radius:14px}
+.cue span{position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff;animation:cue 1.6s ease-in-out infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
+.curve{position:absolute;left:0;bottom:-1px;width:100%;height:80px;fill:var(--paper);display:block}
+@media (prefers-reduced-motion:reduce){.g i,.cue span{animation:none}}
+
+/* sections */
+section{padding:44px 0;border-top:1px solid var(--line)}
+section>h2{font-family:var(--display);font-weight:800;font-size:1.7rem;letter-spacing:-.02em;margin:0 0 20px}
+h3{font-family:var(--display);font-size:1.15rem;letter-spacing:-.01em;margin:0 0 2px}
+.meta{font-family:var(--display);font-size:.92rem;color:var(--muted);margin:0 0 8px}
+p{margin:0 0 12px;max-width:68ch}
+.notice{background:var(--panel);border:2px solid var(--blue);border-radius:10px;padding:16px 20px;margin-top:24px}
+.notice h3{margin-bottom:6px}
+.notice p{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{font-family:var(--display);font-size:.92rem;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:4px 12px}
+.entry{padding:22px 0;border-top:1px solid var(--line)}
+.entry:first-of-type{border-top:0;padding-top:0}
+.entry ul{margin:6px 0 0;padding-left:1.2em}
+.entry li{margin-bottom:4px;max-width:66ch}
+.pub{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:8px;padding:18px 20px;margin-bottom:16px}
+.pub h3{margin-bottom:8px}
+.pub p{margin-bottom:6px}
+.tag{display:inline-block;font-family:var(--display);font-size:.82rem;font-weight:700;padding:2px 10px;border-radius:99px;border:1px solid var(--ok);color:var(--ok)}
+.tag.pend{border-color:var(--blue);color:var(--blue)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.sk+.sk{margin-top:18px}
+.sk h3{font-size:1rem;margin-bottom:8px}
+.date{font-family:var(--display);font-size:.92rem;color:var(--muted)}
+
+/* scanner demo */
+.lab{background:var(--panel);border:2px solid var(--ink);border-radius:12px;padding:20px}
+.lab textarea{width:100%;min-height:150px;resize:vertical;font:.92rem/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
+.lab label{font-family:var(--display);font-weight:700;font-size:.95rem;display:block;margin-bottom:6px}
+#found{list-style:none;margin:14px 0 0;padding:0}
+#found li{padding:8px 12px;border-radius:8px;border:1px solid var(--line);margin-bottom:8px;background:var(--paper)}
+#found li b{font-family:var(--display);background:var(--amber);color:var(--amber-ink);border-radius:4px;padding:1px 8px;margin-right:8px;font-size:.88rem}
+.sum{font-family:var(--display);font-weight:700;margin-top:12px}
+.sum.good{color:var(--ok)}.sum.bad{color:var(--warn)}
+.fine{font-size:.85rem;color:var(--muted);margin:8px 0 0}
+
+footer{border-top:1px solid var(--line);padding:28px 0 56px;color:var(--muted);font-family:var(--display);font-size:.9rem}
+section>h2{position:relative;padding-bottom:14px;margin-bottom:26px}
+section>h2::after{content:"";position:absolute;left:0;bottom:0;width:48px;height:4px;border-radius:2px;background:var(--blue)}
+.pub,.lab,.notice{box-shadow:0 10px 30px rgba(16,27,42,.08)}
+.pub{transition:transform .2s,box-shadow .2s}
+.pub:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(16,27,42,.14)}
+.entry,.entry:first-of-type{position:relative;border-top:0;border-left:2px solid var(--line);margin-left:6px;padding:14px 0 14px 24px}
+.entry::before{content:"";position:absolute;left:-8px;top:22px;width:10px;height:10px;border-radius:50%;background:var(--paper);border:3px solid var(--blue)}
+@media (max-width:820px){
+  .hero-in{grid-template-columns:1fr;gap:36px;padding-top:96px;padding-bottom:120px}
+  .portrait{order:-1}
+  .portrait img{width:170px;height:179px}
+  .cue{display:none}
+  .cols{grid-template-columns:1fr;gap:20px}
+  nav .hide-sm{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="bar"><div class="wrap">
+  <a class="brand" href="#top">Muhammad Yasir Mehmood</a>
+  <nav aria-label="Main">
+    <a class="hide-sm" href="#about">About</a>
+    <a class="hide-sm" href="#publications">Publications</a>
+    <a class="hide-sm" href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a class="hide-sm" href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+  </nav>
+</div></div>
+
+<header class="hero" id="top">
+  <div class="layer l-orbs" data-k="0.4"></div>
+  <div class="layer l-grid" data-k="0.5"></div>
+  <svg class="layer l-nodes" id="nodes" data-k="0.3" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+  <div class="layer l-glyphs" id="glyphs" aria-hidden="true"></div>
+  <div class="wrap hero-in" id="heroin">
+    <div>
+      <p class="role">BS Computer Science (final year), The University of Haripur</p>
+      <h1>Muhammad Yasir Mehmood</h1>
+      <p class="lead">My research spans AI security, machine learning and penetration testing. I study how AI systems get attacked, and how to build tools that catch vulnerabilities before attackers do.</p>
+      <div class="btns">
+        <a class="btn primary" href="#publications">Read my papers</a>
+        <a class="btn" href="https://github.com/yasiruoh" rel="noopener">GitHub</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+      <ul class="facts"><li>AMICT 2026 oral presentation</li><li>Bugcrowd researcher</li><li>CGPA 3.64 / 4.00</li></ul>
+    </div>
+    <div class="portrait"><img src="img/yasir.jpg" alt="Portrait of Muhammad Yasir Mehmood" width="240" height="253"></div>
+  </div>
+  <a class="cue" href="#about" aria-label="Scroll to About"><span></span></a>
+  <svg class="curve" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C240 100 480 0 720 30S1200 100 1440 30V90H0Z"/></svg>
+</header>
+<div class="wrap">
+<main id="main">
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am a research-oriented final-year Computer Science student at the University of Haripur, Pakistan, expecting my degree in 2027. I am the co-author of a conference paper accepted for oral presentation at AMICT 2026 and of a journal paper under review.</p>
+    <p>My experience includes a cybersecurity internship at Deltaroot LLC and independent bug bounty research on Bugcrowd. For my final year project I am building SecureCode AI, a platform that finds security vulnerabilities in source code.</p>
+    <h3 style="margin-top:22px">Research interests</h3>
+    <ul class="chips" style="margin-top:10px">
+      <li>AI security and LLM safety</li><li>Adversarial machine learning</li><li>Machine learning and deep learning</li><li>Penetration testing</li><li>Vulnerability assessment</li>
+    </ul>
+    <div class="notice">
+      <h3>Looking for a fully funded MS</h3>
+      <p>I am seeking a fully funded MS programme where I can continue research in AI security. Direct enquiries from prospective supervisors are very welcome.</p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <article class="pub">
+      <h3>A Comparative Study of Traditional and AI-Driven Penetration Testing and a Layered Hybrid Model</h3>
+      <p><b>Muhammad Yasir Mehmood</b>, Mehmood Ahmed, Gohar Rahman, Aitezaz Ur Rehman Rajpoot, Muhammad Nasir Mehmood, Salmah Binti Fattah, Yuseni Bin Ab Wahab.</p>
+      <p>International Conference on Advance Machine and Cyber Intelligence Technology (AMICT), Malaysia, 2026.</p>
+      <span class="tag">Accepted for oral presentation</span>
+    </article>
+    <article class="pub">
+      <h3>Security Risks in AI-Assisted Programming: A Comparative Systematic Literature Review of Vulnerabilities in LLM-Generated Code</h3>
+      <p>Qazi Wasi ur Rehman, <b>Muhammad Yasir Mehmood</b>, Aitezaz Ur Rehman Rajpoot, Muneeb ur Rehman, Gohar Rahman, Mehmood Ahmed.</p>
+      <p>International Journal of Machine Intelligence and Computing (IJMIC), 2026.</p>
+      <span class="tag pend">Under review</span>
+    </article>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="entry">
+      <h3>AI and Cyber Security Intern, Deltaroot LLC</h3>
+      <p class="meta">June 2026 – September 2026 · Remote (Canada)</p>
+      <ul>
+        <li>Completed structured Microsoft Purview labs on Communication Compliance, Insider Risk Management, and Audit Search and Retention Policy configuration, and documented each in a detailed lab report.</li>
+        <li>Supervised by Mr. Fahad Ahmed.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <h3>Independent Cybersecurity Researcher (Bug Bounty), Bugcrowd</h3>
+      <p class="meta">April 2026 – present · Remote</p>
+      <ul>
+        <li>Reported a configuration flaw on a USGS domain: missing security headers that could expose users to clickjacking and XSS. Validated as P5 / Informational.</li>
+        <li>Conduct reconnaissance, asset discovery and passive endpoint scanning on public infrastructure targets.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <h3>Web Development Intern, Directorate of IT Services, University of Haripur</h3>
+      <p class="meta">July 2025 – September 2025 · Haripur, Pakistan</p>
+      <ul>
+        <li>Helped build and maintain the university’s main web applications.</li>
+        <li>Used JavaScript, PHP, Bootstrap and MySQL to design, launch and troubleshoot secure web modules.</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top:36px">Leadership and volunteering</h2>
+    <div class="entry">
+      <h3>Head of Technical Wing, IPCIH Youth &amp; Peace Society</h3>
+      <p class="meta">May 2026 – present · Haripur, Pakistan</p>
+      <ul><li>Manage digital operations, infrastructure and technical capacity-building initiatives.</li></ul>
+    </div>
+    <div class="entry">
+      <h3>Tech Team Lead and General Member, Cyber Security Club, University of Haripur</h3>
+      <ul>
+        <li>Led technical operations and designed interactive cybersecurity learning modules for peers and new members.</li>
+        <li>Mentored 50+ students in networking fundamentals and VAPT methodology.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <h3>Campus Ambassador, Scholars Avenue</h3>
+      <p class="meta">May 2026 – present · University of Haripur</p>
+      <ul><li>Selected on merit to represent Scholars Avenue on campus.</li></ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="entry">
+      <h3>SecureCode AI (final year project)</h3>
+      <p class="meta">2026 – present</p>
+      <ul>
+        <li>Building a platform that detects security vulnerabilities in source code, including injection attacks, weak authentication and unsafe data handling.</li>
+        <li>Evaluating it against adversarial attacks and LLM-generated insecure code.</li>
+      </ul>
+      <div class="lab" style="margin-top:16px">
+        <label for="code">Try a tiny version: paste code and scan it</label>
+        <textarea id="code" spellcheck="false">import hashlib
+password = "hunter2"
+def find_user(db, name):
+    query = f"SELECT * FROM users WHERE name = '{name}'"
+    return db.execute(query)
+def check(pw):
+    return hashlib.md5(pw.encode()).hexdigest()</textarea>
+        <div class="sum" id="sum" aria-live="polite"></div>
+        <ul id="found"></ul>
+        <p class="fine">A few simple pattern rules running in your browser. SecureCode AI itself uses static analysis plus AI, so this only shows the idea.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <h3>AI and Security Lab projects</h3>
+      <ul>
+        <li><b>Computer vision:</b> livestock detection and counting (YOLOv8), garbage classification (CNN), license plate recognition (YOLO, OCR), face mask detection (YOLO, OpenCV), brain tumor classification from MRI scans (CNN, SVM).</li>
+        <li><b>Security ML:</b> malware detection, DDoS attack detection and SQL injection detection systems using machine learning.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <h3>IPCIH Learning Management System</h3>
+      <p class="meta">Core developer</p>
+      <ul><li>Built a complete LMS for IPCIH, live at <a href="https://lms.ipcih.gov.pk/login" rel="noopener">lms.ipcih.gov.pk</a>.</li></ul>
+    </div>
+    <div class="entry">
+      <h3>University QR Code Management System</h3>
+      <p class="meta">Core developer · Directorate of IT Services</p>
+      <ul><li>Developed an end-to-end tracking and encoding system that improved administrative workflows, retrieval speed and public access to key records. Added input sanitization and verification layers against SQL injection and XSS.</li></ul>
+    </div>
+    <div class="entry">
+      <h3>University GPA and CGPA Calculator</h3>
+      <p class="meta">Lead architect · Open source</p>
+      <ul><li>An online calculator that follows the university’s exact grading and credit rules, with reactive forms and real-time validation in JavaScript. <a href="https://yasiruoh.github.io/uohcgpacalculator.com" rel="noopener">Open the calculator</a>.</li></ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education and honours</h2>
+    <div class="entry">
+      <h3>BSc Computer Science, The University of Haripur</h3>
+      <p class="meta">2023 – present (expected 2027) · CGPA 3.64 / 4.00</p>
+      <p>Courses: Artificial Intelligence, Machine Learning, Deep Learning, Cybersecurity, Information Security, Internet of Things, Computer Networks, Cloud Computing, Parallel and Distributed Computing, Operating Systems, Computer Organization and Assembly Language, Data Structures and Algorithms, Database Management Systems, Theory of Automata, Software Engineering, Human-Computer Interaction, Computer Graphics.</p>
+    </div>
+    <div class="entry">
+      <h3>Honours</h3>
+      <ul><li>Merit Scholarship, awarded during high school.</li><li>Highest marks in the boys section, college.</li></ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills and certificates</h2>
+    <div class="cols">
+      <div>
+        <div class="sk"><h3>Cybersecurity</h3><ul class="chips"><li>Network Security</li><li>VAPT</li><li>Web Application Security</li><li>SQL Injection Testing</li><li>Threat Intelligence</li><li>Security Risk Analysis</li><li>Secure System Design</li><li>Ethical Hacking</li></ul></div>
+        <div class="sk"><h3>AI and machine learning</h3><ul class="chips"><li>Machine Learning</li><li>Deep Learning</li><li>Computer Vision</li><li>NLP</li><li>Adversarial ML</li><li>LLM Security</li></ul></div>
+        <div class="sk"><h3>Programming and databases</h3><ul class="chips"><li>C++</li><li>Python</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Laravel</li></ul></div>
+        <div class="sk"><h3>Web and tools</h3><ul class="chips"><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>Linux</li><li>Cisco Packet Tracer</li><li>NI Multisim</li></ul></div>
+      </div>
+      <div>
+        <div class="sk"><h3>Certificates</h3>
+          <ul>
+            <li>Google Network Security Certificate, Google</li>
+            <li>Network Security Certificate, ISC2</li>
+            <li>Certified Threat Intelligence and Governance Analyst (CTIGA), Red Team Leaders</li>
+            <li>Certified Cybersecurity Educator Professional (CCEP), Red Team Leaders</li>
+            <li>Complete Website Ethical Hacking and Penetration Testing, Udemy</li>
+            <li>SQL Injection Attacks, EC-Council</li>
+            <li>Pre Security Learning Path, TryHackMe</li>
+            <li>Diploma of Information Technology (DIT), Technical Board</li>
+          </ul>
+        </div>
+        <div class="sk"><h3>Languages</h3><p>Hindko (mother tongue), English (professional), Urdu (national language).</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in touch</h2>
+    <p>Email: <a href="mailto:yasirmehmoodhrp2005@gmail.com"><b>yasirmehmoodhrp2005@gmail.com</b></a><br>University email: <a href="mailto:f23-0038@student.uoh.edu.pk">f23-0038@student.uoh.edu.pk</a></p>
+    <p>GitHub: <a href="https://github.com/yasiruoh" rel="noopener">github.com/yasiruoh</a><br>Based in Haripur, Khyber Pakhtunkhwa, Pakistan.</p>
+  </section>
+</main>
+<footer>Last updated <span id="upd">2026</span> by Muhammad Yasir Mehmood.</footer>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme'); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+    var n=dark?'light':'dark'; root.setAttribute('data-theme',n);
+    try{localStorage.setItem('theme',n);}catch(e){}
+  });
+
+  // ---- parallax hero ----
+  var hero=document.querySelector('.hero'), bar=document.querySelector('.bar'), hin=document.getElementById('heroin');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var seed=7; function rnd(){seed=(seed*16807)%2147483647; return seed/2147483647;}
+  var NS='http://www.w3.org/2000/svg', nodes=document.getElementById('nodes'), pts=[], el;
+  for(var i=0;i<26;i++) pts.push([rnd()*1000,rnd()*600]);
+  pts.forEach(function(a,i){pts.forEach(function(b,j){
+    if(j>i && Math.hypot(a[0]-b[0],a[1]-b[1])<190){
+      el=document.createElementNS(NS,'line');
+      el.setAttribute('x1',a[0]);el.setAttribute('y1',a[1]);el.setAttribute('x2',b[0]);el.setAttribute('y2',b[1]);
+      el.setAttribute('stroke','rgba(255,255,255,.2)');nodes.appendChild(el);
+    }});});
+  pts.forEach(function(p,i){
+    el=document.createElementNS(NS,'circle');
+    el.setAttribute('cx',p[0]);el.setAttribute('cy',p[1]);el.setAttribute('r',2.5+rnd()*2.5);
+    el.setAttribute('fill',i%7===0?'#FFD45C':'rgba(255,255,255,.6)');nodes.appendChild(el);
+  });
+  // [text, left %, top %, size rem, depth, opacity]
+  var G=[['</>',5,26,5,1.1,.16],['{ }',80,24,6.5,1.3,.12],['0x41',68,72,2.2,.5,.24],['SELECT *',10,74,1.6,.4,.22],
+    ['#!/bin/sh',44,22,1.4,.35,.24],['<script>',86,52,1.8,.6,.2],['sudo',30,80,2.4,.7,.16],['01101',58,78,1.5,.3,.22],
+    ['if (x) {',3,52,1.7,.45,.2],[';--',52,40,3,.8,.1]];
+  var gl=document.getElementById('glyphs'), gs=[];
+  G.forEach(function(g){
+    var d=document.createElement('div'), t=document.createElement('i');
+    d.className='g'; d.style.cssText='left:'+g[1]+'%;top:'+g[2]+'%;font-size:'+g[3]+'rem;opacity:'+g[5]+(g[4]>1?';filter:blur(2px)':'');
+    t.textContent=g[0]; t.style.animationDelay=(-rnd()*8)+'s'; d.appendChild(t); gl.appendChild(d); gs.push([d,g[4]]);
+  });
+  var layers=[].slice.call(document.querySelectorAll('.layer[data-k]')), mx=0, my=0, queued=false;
+  function frame(){
+    queued=false;
+    var h=hero.offsetHeight, y=window.scrollY, sc=Math.min(y,h);
+    bar.classList.toggle('solid', y>h-90);
+    if(reduce) return;
+    layers.forEach(function(l,i){var d=.15+.15*i; l.style.transform='translate3d('+(mx*d*40)+'px,'+(sc*(+l.dataset.k)+my*d*30)+'px,0)';});
+    gs.forEach(function(g){var d=g[1]; g[0].style.transform='translate3d('+(mx*d*60)+'px,'+(sc*(.4-d*.45)+my*d*40)+'px,0)';});
+    hin.style.transform='translate3d(0,'+(sc*.25)+'px,0)';
+    hin.style.opacity=Math.max(0,1-sc/(h*.75));
+  }
+  function ask(){ if(!queued){queued=true; requestAnimationFrame(frame);} }
+  window.addEventListener('scroll',ask,{passive:true});
+  window.addEventListener('resize',ask);
+  if(!reduce) hero.addEventListener('pointermove',function(e){
+    var r=hero.getBoundingClientRect(); mx=(e.clientX-r.left)/r.width-.5; my=(e.clientY-r.top)/r.height-.5; ask();
+  });
+  frame();
+
+  var rules=[
+    [/(select|insert into|update|delete from)\b.*(["']\s*\+|\{[^}]*\}|\$_(get|post|request)|%s)/i,'SQL built from user input','Use parameterized queries instead of string building.'],
+    [/\beval\s*\(|\bos\.system\s*\(|\bexec\s*\(/,'Runs dynamic code or a shell command','Avoid it, or strictly validate every input.'],
+    [/\.innerHTML\s*=|document\.write\s*\(/,'Writes unescaped HTML (XSS risk)','Use textContent or escape the output.'],
+    [/(password|passwd|secret|api[_-]?key|token)\s*[:=]\s*["'][^"']{3,}["']/i,'Hard-coded secret','Move it to an environment variable or secret store.'],
+    [/\b(md5|sha1)\s*\(|hashlib\.(md5|sha1)/i,'Weak hash function','Use bcrypt, scrypt or Argon2 for passwords.'],
+    [/pickle\.loads?\(|yaml\.load\(/,'Unsafe deserialization','Use a safe loader and never load untrusted data.']
+  ];
+  var ta=document.getElementById('code'), list=document.getElementById('found'), sum=document.getElementById('sum');
+  function scan(){
+    list.textContent=''; var n=0;
+    ta.value.split('\n').forEach(function(line,i){
+      rules.forEach(function(r){
+        if(r[0].test(line)){
+          n++; var li=document.createElement('li'), b=document.createElement('b');
+          b.textContent='Line '+(i+1); li.appendChild(b);
+          li.appendChild(document.createTextNode(r[1]+'. '+r[2])); list.appendChild(li);
+        }
+      });
+    });
+    sum.className='sum '+(n?'bad':'good');
+    sum.textContent=n?(n+(n===1?' issue found':' issues found')):'No known issue patterns found';
+  }
+  ta.addEventListener('input',scan); scan();
+})();
+</script>
+</body>
+</html>
